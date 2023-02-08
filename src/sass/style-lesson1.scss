@@ -1,0 +1,145 @@
+@import 'libs/fonts';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:rgba(183, 0, 255, 0.685);
+    color: white;
+    min-height: 100vh;
+}
+
+header  {
+   font-size: 1.5rem;
+}
+
+.todo-list, header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__input, &__button {
+        padding: 0.5rem;
+        border: none;
+        font-size: 1rem;
+        background: white;
+        border-radius: 0.5rem;
+    }
+
+    &__button {
+        width: 5vw;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3 ease;
+        &:hover {
+            color:rgb(150, 4, 207)
+        }
+    }
+}
+
+.todo_list__filter {
+    appearance: none; 
+    outline: none; 
+    border: none;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    color:rgb(150, 4, 207);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 10rem;
+}
+
+.todo-list__select {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    &::after {
+        content: "\25BC";
+        position: absolute;
+        background:rgb(150, 4, 207);
+        top: 0;
+        right: 0;
+        padding: 0.5rem;
+        pointer-events: none;
+        transition: all 0.3s ease;
+    }
+    &:hover::after {
+        background: white;
+        color: rgb(150, 4, 207);
+    } 
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    background:white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    li {
+        flex: 1;
+    }
+}
+
+.complete-btn, .trash-btn, .edit-btn {
+    color: white;
+    width: 13%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: none;
+    
+}
+
+.edit-btn {
+    background:rgb(234, 158, 6);
+}
+
+.complete-btn {
+    background:rgb(192, 234, 6);
+}
+
+.trash-btn {
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background:rgba(234, 63, 6, 0.837);
+}
+
+/* 
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+} */
