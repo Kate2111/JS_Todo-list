@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "http://###",
+  "homepage": "https://kate2111.github.io/ToDo-list/", 
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
