@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+.wrapper {
+    padding: 10px;
+}
+
 header  {
    font-size: 1.5rem;
 }
@@ -24,6 +28,7 @@ header  {
     align-items: center;
 
     &__input, &__button {
+        outline: none;
         padding: 0.5rem;
         border: none;
         font-size: 1rem;
@@ -32,7 +37,7 @@ header  {
     }
 
     &__button {
-        width: 5vw;
+        width: 30px;
         margin-left: 0.5rem;
         cursor: pointer;
         transition: all 0.3 ease;
@@ -48,6 +53,7 @@ header  {
     border: none;
     padding: 0.5rem;
     margin-left: 0.5rem;
+    background-color: white; 
     color:rgb(150, 4, 207);
     border-radius: 0.5rem;
     font-size: 1rem;

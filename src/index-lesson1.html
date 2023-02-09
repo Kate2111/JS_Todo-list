@@ -8,30 +8,31 @@
     <link rel="stylesheet" href="css/style-lesson1.min.css">
 </head>
 <body>
-    <header>To do list</header>
+    <section class="wrapper">
+        <header>To do list</header>
 
-    <form class="todo-list" action="">
-        <input type="text" placeholder="Введите задачу" class="todo-list__input">
-        <button class="todo-list__button">
-            <span>&#43;</span>
-        </button>
+        <form class="todo-list" action="">
+            <input type="text" placeholder="Введите задачу" class="todo-list__input">
+            <button class="todo-list__button">
+                <span>&#43;</span>
+            </button>
 
-        <div class="todo-list__select">
-            <select name="todos" class="todo_list__filter">
-                <option value="all">Все задачи</option>
-                <option value="completed">Завершенные</option>
-                <option value="incomplete">Актуальные</option>
-            </select>
+            <div class="todo-list__select">
+                <select name="todos" class="todo_list__filter">
+                    <option value="all">Все задачи</option>
+                    <option value="completed">Завершенные</option>
+                    <option value="incomplete">Актуальные</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="todo-container">
+            <ul class="list">
+                
+            </ul>
         </div>
-    </form>
 
-    <div class="todo-container">
-        <ul class="list">
-            
-        </ul>
-    </div>
-
-    
+    </section>
         
 </body>
 <script src="js/script-lesson1.js"></script>

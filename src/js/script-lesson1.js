@@ -131,6 +131,7 @@ function deleteCheck(event) {
         const input = document.createElement('input');
         input.classList.add('edit');
         input.value = elem.textContent;
+        input.style.outline = 'none';
         elem.textContent = '';
         elem.appendChild(input);
 
